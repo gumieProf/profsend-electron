@@ -1,16 +1,16 @@
-const { app, BrowserWindow } = require('electron')
+const { app, BrowserWindow } = require("electron");
 
-function createWindow () {
+function createWindow() {
   // Create the browser window.
   let win = new BrowserWindow({
     width: 800,
     height: 600,
     webPreferences: {
-      nodeIntegration: true
-    }
-  })
+      nodeIntegration: true,
+    },
+  });
 
-  win.loadURL('https://profsend.net/')
+  win.loadURL("https://profsend.net/");
 }
 
-app.on('ready', createWindow)
+app.on("ready", createWindow);

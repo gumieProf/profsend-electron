@@ -1,11 +1,17 @@
 {
   "name": "profsend",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "main": "index.js",
   "license": "MIT",
   "devDependencies": {
-    "electron": "^14.0.0",
+    "electron": "^15.3.0",
     "electron-builder": "^22.11.7"
+  },
+  "scripts": {
+    "build-mac": "node_modules/.bin/electron-builder --mac --x64",
+    "build-win": "node_modules/.bin/electron-builder --win --x64",
+    "build": "npm run build-mac && npm run build-win",
+    "start": "electron ."
   },
   "build": {
     "appId": "net.gumieprof.profsend",
