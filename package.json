@@ -4,8 +4,8 @@
   "main": "index.js",
   "license": "MIT",
   "devDependencies": {
-    "electron": "^15.3.0",
-    "electron-builder": "^22.11.7"
+    "electron": "^18.0.3",
+    "electron-builder": "^23.0.2"
   },
   "scripts": {
     "build-mac": "node_modules/.bin/electron-builder --mac --x64",

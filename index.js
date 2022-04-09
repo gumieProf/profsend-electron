@@ -10,7 +10,7 @@ function createWindow() {
     },
   });
 
-  win.loadURL("https://profsend.net/");
+  win.loadURL("https://profsend.glitch.me/");
 }
 
 app.on("ready", createWindow);
